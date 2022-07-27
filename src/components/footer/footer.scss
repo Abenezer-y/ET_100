@@ -1,0 +1,107 @@
+.footer {
+    margin-top: 30px;
+    height: 220px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:40em) {
+        max-width: 40em;
+        height: 180px;
+        justify-content: unset;
+    }
+    &.active{
+        opacity: 0.7;
+    }
+    .inside {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        min-width: 70em;
+        // background-color: blueviolet;
+        // margin-left: 100px;
+        justify-content: space-between;
+        @media (max-width:40em) {
+            min-width: 10em;
+            width: 30em;
+            justify-content: unset;
+            // background-color: blue;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 170px;
+            height: 170px;
+            // background-color: bisque;
+            // padding: 5px 15px;
+            // padding: 0.2%;
+            //    margin-left: 130px;
+
+            // background-color: blue;
+            
+            img {
+                margin-left: 10px;
+                object-fit: contain;
+                height: 120px;
+                width: 120px;
+                @media (max-width:40em) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            img:nth-child(2){
+                @media (max-width:40em) {
+                    display: none;
+                }
+                
+            }
+        }
+        .info {
+            margin-left: 240px;
+            width: 400px;
+            // background-color:black;
+            display: flex;
+            align-items: center;
+            justify-content:end;
+            @media (max-width:40em) {
+                margin-left: 0px;
+            }
+            .single {
+                margin-left: 25px;
+                span {
+                    cursor: pointer;
+                    color: white;
+                    font-size: 16px;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                }
+            }
+            .sub {
+                margin-left: 20px;
+                // border: 1px solid white;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .icons{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+            .sub:hover {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: white;
+
+                display: flex;
+                align-items: center;
+                .icons{
+                    cursor: pointer;
+                    color: crimson;
+                }
+            }
+        }
+    }
+}
